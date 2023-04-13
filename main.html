@@ -13,7 +13,7 @@
   <body class="text-black">
     <header class="bg-gradient navbar-nav mb-2">
       <a href="/main.html" class="text-decoration-none">
-        <h1 class="text-center text-light py-3 h1">Profile Page</h1>
+        <h1 class="text-center text-light  py-2 h1">Profile Page</h1>
       </a>
     </header>
     <main class="text-light">
@@ -36,23 +36,23 @@
               </label>
             </div>
 
-            <h2 class="h4">Meu Nome</h2>
-            <p>Profissão: XX</p>
-            <p>Interesses: XX</p>
-            <h2 class="h5">Minhas Redes</h2>
-            <div class="mb-3">
-              <a href="https://www.linkedin.com/" class="link-info"><i class="fa-brands
+            <h2 class="h4" id="profileName">Meu Nome</h2>
+            <p class="d-block mb-2">Profissão: <span id="profileProfessional">xxxxxx</span></p>
+            <p class="d-block mb-2">Interesses: <span id="profileProfessional">xxxxxx</span></p>
+            <h2 class="h5 mt-4">Minhas Redes</h2>
+            <div class="mb-3 mt-4">
+              <a href="https://www.linkedin.com/" target="_blank" class="link-light m-2"><i class="fa-brands
                   fa-linkedin fa-xl"></i></a>
-              <a href="https://github.com/" class="link-info"><i class="fa-brands fa-github
+              <a href="https://github.com/" target="_blank" class="link-light m-2"><i class="fa-brands fa-github
                   fa-xl"></i></a>
-              <a href="https://twitter.com/" class="link-info"><i class="fa-brands fa-twitter
+              <a href="https://twitter.com/" target="_blank" class="link-light m-2"><i class="fa-brands fa-twitter
                   fa-xl"></i></a>
-              <a href="https://stackoverflow.com/" class="link-info"><i class="fa-brands
+              <a href="https://stackoverflow.com/" target="_blank" class="link-light m-2"><i class="fa-brands
                   fa-stack-overflow fa-xl"></i></a>
             </div>
             <img src="" alt="" />
           </div>
-          <div class="col-12 col-md-9 shadow-lg p-3 color bg-gradient">
+          <div class="col-12 col-md-9 shadow-lg p-3 color bg-body bg-opacity-10">
             <h2 class="h4 mb-4 mt-5 text-center">Minhas Informações</h2>
             <div class="row mb-3">
               <div class="col-12 col-md-5 m-2">
@@ -122,8 +122,8 @@
               </div>
               <div class="container mt-3">
                 <button
-                  type="submit"
-                  class="btn bg-transparent text-light border-opacity-100 border-light border-1"
+                  type="button"
+                  class="btn  bg-transparent text-light border-opacity-100 border-light border-1"
                   id="submit"
                   onclick="submit()">
                   Atualizar
@@ -134,6 +134,7 @@
         </div>
       </div>
     </main>
-      <script src="src/js/bootstrap.js"></script>
+      <script src="/js/bootstrap.js"></script>
+      <script src="/js/main.js"></script>
   </body>
 </html>
