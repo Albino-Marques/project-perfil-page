@@ -17,8 +17,8 @@
       </a>
     </header>
     <main class="text-light">
-      <div class="container bg-gradient">
-        <div class="rounded-circle row">
+      <div class="container bg-gradient rounded-3">
+        <div class="rounded-3 row bg-black bg-opacity-25">
           <div
             class="col-12 col-md-3 text-center text-light
             rounded-3 bg-transparent shadow-lg">
@@ -36,23 +36,23 @@
               </label>
             </div>
 
-            <h2 class="h4" id="profileName">Meu Nome</h2>
-            <p class="d-block mb-2">Profissão: <span id="profileProfessional">xxxxxx</span></p>
-            <p class="d-block mb-2">Interesses: <span id="profileProfessional">xxxxxx</span></p>
+            <h2 class="h4 mb-3" id="profileName">Meu Nome</h2>
+            <label for="profession" class="d-block mb-2">Profissão: <span id="profileProfessional">xxxxxx</span></label>
+            <label for="numberDocument" class="d-block mb-2">Documento: <span id="profileProfessional">xxxxxx</span></label>
             <h2 class="h5 mt-4">Minhas Redes</h2>
             <div class="mb-3 mt-4">
-              <a href="https://www.linkedin.com/" target="_blank" class="link-light m-2"><i class="fa-brands
+              <a href="https://www.linkedin.com/" target="_blank" class="link-light m-1"><i class="fa-brands
                   fa-linkedin fa-xl"></i></a>
-              <a href="https://github.com/" target="_blank" class="link-light m-2"><i class="fa-brands fa-github
+              <a href="https://github.com/" target="_blank" class="link-light m-1"><i class="fa-brands fa-github
                   fa-xl"></i></a>
-              <a href="https://twitter.com/" target="_blank" class="link-light m-2"><i class="fa-brands fa-twitter
+              <a href="https://twitter.com/" target="_blank" class="link-light m-1"><i class="fa-brands fa-twitter
                   fa-xl"></i></a>
-              <a href="https://stackoverflow.com/" target="_blank" class="link-light m-2"><i class="fa-brands
+              <a href="https://stackoverflow.com/" target="_blank" class="link-light m-1"><i class="fa-brands
                   fa-stack-overflow fa-xl"></i></a>
             </div>
             <img src="" alt="" />
           </div>
-          <div class="col-12 col-md-9 shadow-lg p-3 color bg-body bg-opacity-10">
+          <div class="col-12 col-md-9 shadow-lg p-3 color bg-body bg-opacity-10 rounded-3">
             <h2 class="h4 mb-4 mt-5 text-center">Minhas Informações</h2>
             <div class="row mb-3">
               <div class="col-12 col-md-5 m-2">
@@ -112,6 +112,26 @@
                   />
               </div>
               <div class="mb-1 alert">
+                <label for="location" class="form-label">Profissão:</label>
+                <input
+                  type="text"
+                  id="profession"
+                  name="profession"
+                  class="form-control form-control text-light bg-transparent"
+                  required
+                  />
+              </div>
+              <div class="mb-1 alert">
+                <label for="location" class="form-label">Documento:</label>
+                <input
+                  type="text"
+                  id="numberDocument"
+                  name="numberDocument"
+                  class="form-control form-control text-light bg-transparent"
+                  required
+                  />
+              </div>
+              <div class="mb-1 alert">
                 <label for="bio" class="form-label">Biografia:</label>
                 <textarea
                   id="bio"
@@ -123,7 +143,7 @@
               <div class="container mt-3">
                 <button
                   type="button"
-                  class="btn  bg-transparent text-light border-opacity-100 border-light border-1"
+                  class="btn shadow-sm bg-transparent text-light border-opacity-100 border-light border-1"
                   id="submit"
                   onclick="submit()">
                   Atualizar
