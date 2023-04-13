@@ -221,6 +221,7 @@ hr {
 }
 
 .picture{
+  background: url(/src/assets/user.jpg);
   aspect-ratio: 16/16;
   background: #ddd;
   align-items: center;
@@ -9062,6 +9063,7 @@ textarea.form-control-lg {
 }
 
 .rounded-circle {
+  background: no-repeat center/130% url( "/src/assets/user.jpg") currentColor;
   border-radius: 50% !important;
 }
 
