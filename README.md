@@ -13,3 +13,6 @@ Página de user profile com campos de edição de dados do usuário com enfase e
 O Projeto foi contruido com base na estrutura padrão para perfis pessoais e profiles da internet, utilizando para dar um efeito desfocado a opacidade através das classes do Bootstrap. 
 Quanto ao preenchimento de dados, todos salvos em Local Storage, onde, mesmo atualizando dados com partes do formulário em branco, se mantem os dados já inseridos antes que não foram substituídos intencionalmente. 
 A imagem é possível trocá-la ao clicar no logo da imagem, sendo também armazenada em Local Storage.
+
+
+### Obs: Sobre a execução do projeto. Foi ultilizado a extensão "Live Server" no VSCode para subir um servidor locar e testar a página. 
