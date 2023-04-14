@@ -189,7 +189,7 @@
 }
 
 body {
-  background: url("https://img.freepik.com/fotos-gratis/conceito-de-plano-de-fundo-do-estudio-abstrato-vazio-luz-gradiente-roxo-estudio-quarto-fundo-para-o-produto_1258-68058.jpg?w=996&t=st=1681482098~exp=1681482698~hmac=03c451ab39d51489073e9f292e39dd8c9533f7031dbb70d6c9f654c68aa43324");
+  background: url("https://raw.githubusercontent.com/Albino-Marques/project-sync360/main/src/assets/background-1.jpg");
   background-size: cover;
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -472,11 +472,16 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+input::placeholder, textarea::placeholder {
+  color: rgb(248, 249, 250) !important;
+} 
+
 input,
 button,
 select,
 optgroup,
 textarea {
+  
   margin: 0;
   font-family: inherit;
   font-size: inherit;
