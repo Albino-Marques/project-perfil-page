@@ -189,8 +189,7 @@
 }
 
 body {
-  /* background: url(https://images.unsplash.com/photo-1503198515498-d0bd9ed16902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80) ; */
-  background: url(/src/assets/background-1.jpg);
+  background: url(https://github.com/Albino-Marques/project-sync360/blob/main/src/assets/background-1.jpg);
   background-size: cover;
   margin: 0;
   font-family: var(--bs-body-font-family);
