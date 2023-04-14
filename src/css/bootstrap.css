@@ -221,13 +221,18 @@ hr {
 }
 
 .picture{
-  background: url(/src/assets/user.jpg);
   aspect-ratio: 16/16;
   background: #ddd;
   align-items: center;
   justify-content: center;
   color: #aaa;
   cursor: pointer;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.picture:hover{
+  color: #bbb;
+  background-color: #ccc;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -9063,7 +9068,6 @@ textarea.form-control-lg {
 }
 
 .rounded-circle {
-  background: no-repeat center/130% url( "/src/assets/user.jpg") currentColor;
   border-radius: 50% !important;
 }
 

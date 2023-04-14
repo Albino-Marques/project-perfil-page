@@ -9,6 +9,7 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
       <link rel="stylesheet" href="/src/css/bootstrap.css">
+      <script src="src/js/main.js" type="module" async></script>
   </head>
   <body class="text-black">
     <header class="bg-gradient navbar-nav mb-2">
@@ -23,22 +24,21 @@
             class="col-12 col-md-3 text-center text-light
             rounded-3 bg-opacity-50 bg-black shadow-lg">
             
+                       <!--  <img class="picture_img rounded-circle w-100" src="src/assets/user.jpg" alt="imagem de usuário."> -->
           
             <div class="col-10 mb-5 img-fluid mt-4 w-75 m-auto">
-              <!-- <img
-              src="/src/assets/istockphoto-1210939712-612x612.jpg"
-              class="img-fluid rounded-circle mt-4 w-50"
-              alt="Minha Foto"
-              /> -->
-              <label class="picture rounded-circle mt-4 w-75 d-flex m-auto" tabindex="0">
-                <input type="file" accept="image/*" class="picture-input">
-                <span class="picture-image mt-5">Trocar imagem?</span>
+              <label class="picture rounded-circle mt-4 w-75 d-flex m-auto" for="picture_input" tabindex="0">
+                <input type="file" accept="image/*" class="picture_input d-none" id="picture_input">
+                <span class="text-secondary picture_img rounded-circle w-100" id="picture_img">
+                </span>
+
+                
               </label>
             </div>
 
             <h2 class="h4 mb-3" id="profileName">Meu Nome</h2>
-            <label for="profession" class="d-block mb-2">Profissão: <span id="profileProfessional">xxxxxx</span></label>
-            <label for="numberDocument" class="d-block mb-2">Documento: <span id="profileProfessional">xxxxxx</span></label>
+            <label for="profession" class="d-block mb-2">Profissão: <span id="userProfession">xxxxxx</span></label>
+            <label for="numberDocument" class="d-block mb-2">Documento: <span id="userNumberDocument">xxxxxx</span></label>
             <h2 class="h5 mt-4">Minhas Redes</h2>
             <div class="mb-3 mt-4">
               <a href="https://www.linkedin.com/" target="_blank" class="link-light m-1"><i class="fa-brands
@@ -57,20 +57,24 @@
             <div class="row mb-3">
               <div class="col-12 col-md-5 m-2">
                 <label for="name" class="form-label"><strong>Nome:</strong> </label>
-                <span class="text-white-50 m-2">Meu nome</span>
+                <span class="text-white-50 m-2" id="userName">Meu nome</span>
               </div>
               <div class="col-12 col-md-5 m-2">
                 <label for="age" class="form-label">Idade:</label>
-                <span class="text-white-50 m-2">Minha idade</span>
+                <span class="text-white-50 m-2" id="userAge">Minha idade</span>
               </div>
               <div class="col-12 col-md-5 m-2">
                 <label for="location" class="form-label">Endereço:</label>
-                <span class="text-white-50 m-2">Meu endereço</span>
+                <span class="text-white-50 m-2" id="userLocation">Meu endereço</span>
+              </div>
+              <div class="col-12 col-md-5 m-2">
+                <label for="phone" class="form-label">Telefone:</label>
+                <span class="text-white-50 m-2" id="userPhone">Meu telefone</span>
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 text-center text-capitalize">
               <label for="bio" class="form-label">Breve Biografia:</label>
-              <p>
+              <p id="userBio">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 ultrices ligula id mauris facilisis, ac tristique enim
                 hendrerit. Praesent vel felis quis nulla rhoncus vestibulum ac a
@@ -128,6 +132,17 @@
                   id="numberDocument"
                   name="numberDocument"
                   class="form-control form-control text-light bg-transparent"
+                  min="11"
+                  required
+                  />
+              </div>
+              <div class="mb-1 alert">
+                <label for="phone" class="form-label">Telefone:</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  class="form-control form-control text-light bg-transparent"
                   required
                   />
               </div>
@@ -141,13 +156,9 @@
                   required></textarea>
               </div>
               <div class="container mt-3">
-                <button
-                  type="button"
-                  class="btn shadow-sm bg-transparent text-light border-opacity-100 border-light border-1"
-                  id="submit"
-                  onclick="submit()">
+                <a href="/main.html" class="btn shadow-sm bg-transparent text-light border-opacity-100 border-light border-1"  id="btnSubmit">
                   Atualizar
-                </button>
+                </a>
               </div>
             </form>
           </div>
