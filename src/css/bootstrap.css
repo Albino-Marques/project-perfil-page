@@ -189,7 +189,7 @@
 }
 
 body {
-  background: url(https://github.com/Albino-Marques/project-sync360/blob/main/src/assets/background-1.jpg);
+  background: url("https://img.freepik.com/fotos-gratis/conceito-de-plano-de-fundo-do-estudio-abstrato-vazio-luz-gradiente-roxo-estudio-quarto-fundo-para-o-produto_1258-68058.jpg?w=996&t=st=1681482098~exp=1681482698~hmac=03c451ab39d51489073e9f292e39dd8c9533f7031dbb70d6c9f654c68aa43324");
   background-size: cover;
   margin: 0;
   font-family: var(--bs-body-font-family);
