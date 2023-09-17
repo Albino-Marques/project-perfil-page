@@ -1,18 +1,19 @@
-# project-sync360
-Página de user profile com campos de edição de dados do usuário com enfase em demonstrar o potencial e conhecimento em desenvolvimento front-end.
+# User Profile Page
 
-## Ferramentas utilizadas foram:
-### Visual Studio Code
-### BootStrap
-### JavaScript
-### CSS3
-### HTML5
+This project showcases a user profile page with basic data editing fields, implemented using a minimal set of tools to demonstrate fundamental concepts.
 
-## Sobre o projeto:
+## Technologies Used:
+- Visual Studio Code
+- JavaScript
+- CSS3
+- HTML5
+- Bootstrap
 
-O Projeto foi contruido com base na estrutura padrão para perfis pessoais e profiles da internet, utilizando para dar um efeito desfocado a opacidade através das classes do Bootstrap. 
-Quanto ao preenchimento de dados, todos salvos em Local Storage, onde, mesmo atualizando dados com partes do formulário em branco, se mantem os dados já inseridos antes que não foram substituídos intencionalmente. 
-A imagem é possível trocá-la ao clicar no logo da imagem, sendo também armazenada em Local Storage.
+## About the Project:
 
+The project is built following the standard structure for personal profiles commonly seen on the internet. It incorporates Bootstrap classes to achieve a blurred effect with opacity. 
 
-### Obs: Sobre a execução do projeto. Foi ultilizado a extensão "Live Server" no VSCode para subir um servidor locar e testar a página. 
+Regarding data storage, all information is saved in Local Storage. This means that even if you update parts of the form with blank fields, the previously entered data will be retained unless intentionally replaced. The user can also change their profile picture by clicking on the image logo, and the new image will be stored in Local Storage.
+
+### Note: Project Execution
+To run the project, the "Live Server" extension in VSCode was utilized to set up a local server for testing the page.
